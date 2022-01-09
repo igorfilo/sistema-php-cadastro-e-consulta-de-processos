@@ -1,0 +1,45 @@
+.table .table-bordered, tr, th {
+	text-align:center;
+	vertical-align: middle;
+}
+
+.p-assunto{
+	width: 400px; 
+	text-align:left;
+}
+
+#bloco, #bloco2 {
+	font-family: verdana, arial, sans-serif;
+    font-size: 32px;
+    text-align: center;
+    background-color: #ffb714;
+	padding: 30px;
+    position: relative;
+	margin-top: 10%;
+	margin-bottom: 60%;
+	text-decoration: bold;
+}
+
+#bloco a, #bloco2 a{
+	color: #fff;
+	
+}
+
+#bloco a:hover, #bloco2 a:hover{
+	text-decoration: none;
+}
+
+#bloco:hover, #bloco2:hover{
+	text-decoration: none;
+	background-color: #D43F3A;
+}
+
+
+#label{
+	text-align: center;
+	
+}
+
+#assuntotxt{
+	margin-bottom: 10px;
+}
