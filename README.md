@@ -7,6 +7,9 @@ Este projeto é um sistema de cadastro e consulta de processos e protocolos. Há
 Na aba Protocolo é possível cadastrar um novo para gerar um número único pelo próprio sistema.
 
 
+É necessário criar uma pasta com nome "uploads", onde serão armazenados os arquivos enviados por upload no formulário do processo.
+
+
 O usuário padrão é "admin" e senha "admin". Não possui ainda a aba de inserir usuários diretamente pelo front.
 
 Para conexão com o banco de dados, altere as informações do arquivo "conexao.php" e "init.php", conforme seus dados de conexão.
