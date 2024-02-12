@@ -7,7 +7,7 @@ Este projeto é um sistema de cadastro e consulta de processos e protocolos. Há
 Na aba Protocolo é possível cadastrar um novo para gerar um número único pelo próprio sistema.
 
 
-É necessário criar uma pasta com nome "uploads", onde serão armazenados os arquivos enviados por upload no formulário do processo.
+É necessário criar uma pasta com nome "uploads", onde serão armazenados os arquivos enviados por upload no formulário do processo e uma pasta "relatorios" para salvar o relatório em pdf.
 
 
 O usuário padrão é "admin" e senha "admin". 
