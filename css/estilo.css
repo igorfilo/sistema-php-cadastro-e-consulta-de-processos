@@ -16,13 +16,22 @@
 	padding: 30px;
     position: relative;
 	margin-top: 10%;
-	margin-bottom: 60%;
+	margin-bottom: 10%;
 	text-decoration: bold;
+	
 }
 
 #bloco a, #bloco2 a{
 	color: #fff;
 	
+}
+
+a {
+	color:fff;
+}
+a:hover {
+	text-decoration: none;
+	color: fff;
 }
 
 #bloco a:hover, #bloco2 a:hover{
