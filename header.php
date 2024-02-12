@@ -1,5 +1,7 @@
 <?php
 session_start();
+date_default_timezone_set('America/Cuiaba');
+
 require 'init.php';
 require 'check.php';
 ?>
@@ -25,11 +27,14 @@ require 'check.php';
 	<li><a href="processo.php">Processos  <span class="sr-only"></span></a></li>
 	<li><a href="protocolo.php">Protocolos  <span class="sr-only"></span></a></li>
 	<li><a href="relatorio.php"> Relatório <span class="sr-only"></span></a></li>
+	
+	       
+	
 	</ul>
 
 	<ul class="nav navbar-nav navbar-right">
 
-	<li><a>Usuário: <?php echo $_SESSION['user_name']; ?> </a> </li>
+	<li><a href="painel.php"><span class="glyphicon glyphicon-user"></span> Usuário: <?php echo $_SESSION['user_name']; ?> </a> </li>
 	<li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> SAIR</a></li>
 
 	  </ul>

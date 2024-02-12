@@ -39,7 +39,7 @@ endif;
 <head>
     <meta charset="utf-8">
 	<title>Listagem de Processos</title>
-	<link rel="stylesheet" type="text/css" href="css/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel = "shortcut icon" type = "imagem/x-icon" href = ""/>
@@ -76,7 +76,7 @@ endif;
 			<h3 style="text-align:center;">PROCESSOS CADASTRADOS</h3>
 				<!-- Tabela de Processos -->
 				
-				<table class="table table-bordered">
+				<table class="table table-hover">
 					<tr class='active'>
 						<th>NÚMERO DE PROTOCOLO</th>
 						<th>ASSUNTO</th>
@@ -94,8 +94,8 @@ endif;
 							<td><?php echo date('d/m/Y', strtotime($processo->data));?></td> 
 							<td><?=$processo->interessado?></td> 
 							<td>
-							<a href='editar.php?id=<?=$processo->id?>' class="btn btn-primary"> <span class="glyphicon glyphicon-pencil"></span> Editar</a>
-								<a href='javascript:void(0)' class="btn btn-danger link_exclusao" rel="<?=$processo->id?>"><span class="glyphicon glyphicon-trash"></span> Excluir</a>
+							<a href='editar.php?id=<?=$processo->id?>' class="btn btn-primary" title="Editar processo"> <span class="glyphicon glyphicon-pencil"></span> </a>
+								<a href='javascript:void(0)' class="btn btn-danger link_exclusao" rel="<?=$processo->id?>" title="Excluir processo"><span class="glyphicon glyphicon-trash"></span> </a>
 							</td>
 						</tr>
                     <?php
@@ -109,19 +109,7 @@ endif;
                                 $back = ($page > 1 ? '' : "class='disabled' ");
                                 ?>
 						<li <?= $back ?> class="page-item"><a class="page-link" href="?pg=<?php echo($page > 1 ? $page - 1 : $page); ?>">Anterior</a></li>
-						
-						<!-- 
-						<?php /*
-                            if ($pages > 0) {
-                                for ($i = 0; $i < $pages; $i++) {
-                                    $active = ($i + 1 == $page ? "class='active'" : "");
-                                    $pg = ($i + 1);
-                                    echo "<li {$active}><a href='?pg={$pg}'>{$pg}</a></li>";
-                                }
-                            }
-                            $next = ($page < $pages ? '' : "class='disabled' ");
-                        */ ?> -->
-						
+							
 						
 						<li class="page-item"><a class="page-link" href="?pg=<?php echo($page < $pages ? $page + 1 : $page); ?>">Próximo</a></li>
 						

@@ -42,7 +42,7 @@ endif;
 <html>
 <head>
     <meta charset="utf-8">
-	<title>Listagem de protocolos - 3ªCIBM</title>
+	<title>Listagem de Protocolos</title>
 	<link rel="stylesheet" type="text/css" href="css/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
@@ -81,7 +81,7 @@ endif;
 			<h3 style="text-align:center;">PROTOCOLOS CADASTRADOS NA UBM</h3>
 				<!-- Tabela de protocolos -->
 				
-				<table class="table table-bordered">
+				<table class="table table-hover">
 					<tr class='active'>
 						<th>NÚMERO DE PROTOCOLO</th>
 						<th>ASSUNTO</th>
@@ -99,8 +99,8 @@ endif;
 							<td><?php echo date('d/m/Y', strtotime($protocolo->data));?></td> 
 							<td><?=$protocolo->destino?></td> 
 							<td>
-							<a href='editar_protocolo.php?id=<?=$protocolo->id?>' class="btn btn-primary"> <span class="glyphicon glyphicon-pencil"></span> Editar</a>
-								<a href='javascript:void(0)' class="btn btn-danger link_exclusao" rel="<?=$protocolo->id?>"><span class="glyphicon glyphicon-trash"></span> Excluir</a>
+							<a href='editar_protocolo.php?id=<?=$protocolo->id?>' class="btn btn-primary" title="Editar protocolo"> <span class="glyphicon glyphicon-pencil"></span> </a>
+								<a href='javascript:void(0)' class="btn btn-danger link_exclusao" rel="<?=$protocolo->id?>" title="Excluir protocolo"><span class="glyphicon glyphicon-trash" ></span> </a>
 							</td>
 					</tr>
                     <?php
